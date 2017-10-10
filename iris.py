@@ -2,7 +2,7 @@ import numpy as np
 from sklearn.datasets import load_iris
 from sklearn import tree
 from sklearn.externals.six import StringIO
-import pydot
+
 
 iris = load_iris()
 print(iris.feature_names)
@@ -25,3 +25,6 @@ clf = clf.fit(train_data, train_target)
 print(test_target)
 
 print(clf.predict(test_data))
+
+print(test_data[1], test_target[1])
+print(iris.feature_names, iris.target.names)
